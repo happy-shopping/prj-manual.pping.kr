@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/layout.css">
+        <link rel="stylesheet" href="../css/manual.css">
+        <link rel="stylesheet" href="//cdnjs.happyshopping.kr/icomoon/admin/style.css">
+        <!-- 웹 폰트 -->
+        <script src="//cdnjs.happyshopping.kr/_v5/font/webfont.js"></script>
+        <!-- 퍼블용 소스  -->
+        <script src="../js/include_m.js"></script>
+        <!-- 퍼블용 소스  -->
+        <script src="../js/manual_ul.js"></script>
+        <title>행복쇼핑 관리자</title>
+    </head>
+<body>
+    <header id="header" w3-include-html="../include/header_manual.html"></header>
+    <main id="container" class="container">
+        <div class="content_wrap">
+            <div class="menu_acordion">
+                <div class="acordion_subject">
+                    판매상품 리스트
+                </div>
+                <div class="acordion_cont">
+                    <div class="inner">
+                        <ul>
+                            <li>
+                                <div class="list_head">
+                                    <a href="" class="subject">
+                                        <span class="num">Q</span>
+                                        <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                    </a>
+                                    <a href="" class="naver_talk"><i class="icon-navertalk_01"></i></a>
+                                </div>
+                                <div class="list_con">
+                                    <dl>
+                                        <dt>이벤트 조회</dt>
+                                        <dd>1. <em>이벤트 관리 > 이벤트 조회/수정</em>을 클릭하면 이벤트를 조회할 수 있는 페이지가 나옵니다.</dd>
+                                        <dd>2. 전체 이벤트를 조회할 수 있고, 검색에 따라 업체별, 이벤트별, 카테고리별, 진행별, 추첨일, 당첨일과 같은 특정 조건에 따라 필터를 적용하여 검색할 수 있습니다.</dd>
+                                        <dd>3. 이벤트명을 클릭하면 이벤트에 대한 상세페이지로 이동합니다.</dd>
+                                    </dl>
+                                    <div class="iframe_wrap">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bwyBrqaJfY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <!-- 댓글  -->
+                                    <div class="cont_cmt">
+                                        <!-- 댓글 작성-->
+                                        <div class="cmt_writer">
+                                            <div class="cmt_form">
+                                                <div class="i_textarea">
+                                                    <textarea id="id_cmnt" name="comment_msg" title="댓글작성" placeholder="※ 광고/욕설/비방이나 목적에 맞지 않는 글은 관리자에 의해 삭제될 수 있습니다.(10자 이상 등록 가능합니다.)"></textarea>
+                                                </div>
+                                                <div class="comt_form_bot">
+                                                    <div class="i_submit">
+                                                        <span class="word_cnt"><em class="clrpont3">0</em> / 1,000</span>
+                                                        <button type="button" class="cmnt_submit" disabled="">등록</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--// 댓글 작성 끝 -->
+                                        <!-- 댓글 리스트 -->
+                                        <div class="cmt_list">
+                                            <div class="cmt_btns">
+                                                <button class="btn_all_cmt on">전체</button>
+                                                <button class="btn_my_cmt">내가 쓴 댓글</button>
+                                            </div>
+                                            <div class="cmt_table">
+                                                <div class="cmt_item">
+                                                    <div class="item_info">
+                                                        <strong>yujeong***</strong>
+                                                        <font>2018.8.8(1일전)</font>
+                                                    </div>
+                                                    <div class="item_con">
+                                                        감사합니다.
+                                                    </div>
+                                                    <div class="btn_cmt_item">
+                                                        <span class="modify">
+                                                            <button type="button" class="clrbase3">답글</button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="cmt_item">
+                                                    <div class="item_info">
+                                                        <strong>yujeong***</strong>
+                                                        <font>2018.8.8(1일전)</font>
+                                                    </div>
+                                                    <div class="item_con">
+                                                        감사합니다.
+                                                    </div>
+                                                    <div class="btn_cmt_item">
+                                                        <span class="delete">
+                                                            <span>정말 삭제하시겠습니까?</span>
+                                                            <button type="button" class="clrpont2">예</button>
+                                                            <em class="cut_line">|</em>
+                                                            <button type="button" class="clrpont2">아니요</button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="cmt_item rep">
+                                                    <div class="item_info">
+                                                        <strong>yujeong***</strong>
+                                                        <font>2018.8.8(1일전)</font>
+                                                    </div>
+                                                    <div class="item_con">감사합니다.</div>
+                                                    <div class="btn_cmt_item">
+                                                        <span class="modify">
+                                                            <button type="button" class="clrbase3">수정</button>
+                                                            <em class="cut_line">|</em>
+                                                            <button type="button" class="clrbase3">삭제</button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="cmt_item">
+                                                    <div class="item_info">
+                                                        <strong>yujeong***</strong>
+                                                        <font>2018.8.8(1일전)</font>
+                                                    </div>
+                                                    <div class="item_con">감사합니다.</div>
+                                                    <div class="btn_cmt_item">
+                                                        <div class="reply_writer">
+                                                            <div class="reply_form">
+                                                                <div class="i_textarea">
+                                                                    <textarea id="id_reply" name="comment_msg" title="댓글작성" placeholder="※ 광고/욕설/비방이나 목적에 맞지 않는 글은 관리자에 의해 삭제될 수 있습니다.(10자 이상 등록 가능합니다.)"></textarea>
+                                                                </div>
+                                                                <div class="reply_form_bot">
+                                                                    <div class="i_submit">
+                                                                        <button type="button" class="reply_submit reply_cancel" disabled="">취소</button>
+                                                                        <button type="button" class="reply_submit" disabled="">등록</button>
+                                                                        <span class="word_cnt"><em class="clrpont3">0</em> / 1,000</span>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn_cmt_more">더보기 <span class="icon_more_view">+</span></button>
+                                            </div>
+                                        </div>
+                                        <!--// 댓글 리스트 끝-->
+                                    </div>
+                                    <!--// 댓글 끝 -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_head">
+                                    <a href="" class="subject">
+                                        <span class="num">Q</span>
+                                        <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                    </a>
+                                    <a href="" class="naver_talk"><i class="icon-navertalk_01"></i></a>
+                                </div>
+                                <div class="list_con">
+                                    <dl>
+                                        <dt>이벤트 조회</dt>
+                                        <dd>1. <em>이벤트 관리 > 이벤트 조회/수정</em>을 클릭하면 이벤트를 조회할 수 있는 페이지가 나옵니다.</dd>
+                                        <dd>2. 전체 이벤트를 조회할 수 있고, 검색에 따라 업체별, 이벤트별, 카테고리별, 진행별, 추첨일, 당첨일과 같은 특정 조건에 따라 필터를 적용하여 검색할 수 있습니다.</dd>
+                                        <dd>3. 이벤트명을 클릭하면 이벤트에 대한 상세페이지로 이동합니다.</dd>
+                                    </dl>
+                                    <div class="iframe_wrap">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bwyBrqaJfY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_head">
+                                    <a href="" class="subject">
+                                        <span class="num">Q</span>
+                                        <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                    </a>
+                                    <a href="" class="naver_talk"><i class="icon-navertalk_01"></i></a>
+                                </div>
+                                <div class="list_con">
+                                    <dl>
+                                        <dt>이벤트 조회</dt>
+                                        <dd>1. <em>이벤트 관리 > 이벤트 조회/수정</em>을 클릭하면 이벤트를 조회할 수 있는 페이지가 나옵니다.</dd>
+                                        <dd>2. 전체 이벤트를 조회할 수 있고, 검색에 따라 업체별, 이벤트별, 카테고리별, 진행별, 추첨일, 당첨일과 같은 특정 조건에 따라 필터를 적용하여 검색할 수 있습니다.</dd>
+                                        <dd>3. 이벤트명을 클릭하면 이벤트에 대한 상세페이지로 이동합니다.</dd>
+                                    </dl>
+                                    <div class="iframe_wrap">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bwyBrqaJfY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_head">
+                                    <a href="" class="subject">
+                                        <span class="num">Q</span>
+                                        <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                    </a>
+                                    <a href="" class="naver_talk"><i class="icon-navertalk_01"></i></a>
+                                </div>
+                                <div class="list_con">
+                                    <dl>
+                                        <dt>이벤트 조회</dt>
+                                        <dd>1. <em>이벤트 관리 > 이벤트 조회/수정</em>을 클릭하면 이벤트를 조회할 수 있는 페이지가 나옵니다.</dd>
+                                        <dd>2. 전체 이벤트를 조회할 수 있고, 검색에 따라 업체별, 이벤트별, 카테고리별, 진행별, 추첨일, 당첨일과 같은 특정 조건에 따라 필터를 적용하여 검색할 수 있습니다.</dd>
+                                        <dd>3. 이벤트명을 클릭하면 이벤트에 대한 상세페이지로 이동합니다.</dd>
+                                    </dl>
+                                    <div class="iframe_wrap">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bwyBrqaJfY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                 <div class="list_head">
+                                    <a href="" class="subject">
+                                        <span class="num">Q</span>
+                                        <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                    </a>
+                                    <a href="" class="naver_talk"><i class="icon-navertalk_01"></i></a>
+                                </div>
+                                <div class="list_con">
+                                    <dl>
+                                        <dt>이벤트 조회</dt>
+                                        <dd>1. <em>이벤트 관리 > 이벤트 조회/수정</em>을 클릭하면 이벤트를 조회할 수 있는 페이지가 나옵니다.</dd>
+                                        <dd>2. 전체 이벤트를 조회할 수 있고, 검색에 따라 업체별, 이벤트별, 카테고리별, 진행별, 추첨일, 당첨일과 같은 특정 조건에 따라 필터를 적용하여 검색할 수 있습니다.</dd>
+                                        <dd>3. 이벤트명을 클릭하면 이벤트에 대한 상세페이지로 이동합니다.</dd>
+                                    </dl>
+                                    <div class="iframe_wrap">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bwyBrqaJfY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_head">
+                                    <a href="" class="subject">
+                                        <span class="num">Q</span>
+                                        <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                    </a>
+                                    <a href="" class="naver_talk"><i class="icon-navertalk_01"></i></a>
+                                </div>
+                                <div class="list_con">
+                                    <dl>
+                                        <dt>이벤트 조회</dt>
+                                        <dd>1. <em>이벤트 관리 > 이벤트 조회/수정</em>을 클릭하면 이벤트를 조회할 수 있는 페이지가 나옵니다.</dd>
+                                        <dd>2. 전체 이벤트를 조회할 수 있고, 검색에 따라 업체별, 이벤트별, 카테고리별, 진행별, 추첨일, 당첨일과 같은 특정 조건에 따라 필터를 적용하여 검색할 수 있습니다.</dd>
+                                        <dd>3. 이벤트명을 클릭하면 이벤트에 대한 상세페이지로 이동합니다.</dd>
+                                    </dl>
+                                    <div class="iframe_wrap">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bwyBrqaJfY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_head">
+                                    <a href="" class="subject">
+                                        <span class="num">Q</span>
+                                        <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                    </a>
+                                    <a href="" class="naver_talk"><i class="icon-navertalk_01"></i></a>
+                                </div>
+                                <div class="list_con">
+                                    <dl>
+                                        <dt>이벤트 조회</dt>
+                                        <dd>1. <em>이벤트 관리 > 이벤트 조회/수정</em>을 클릭하면 이벤트를 조회할 수 있는 페이지가 나옵니다.</dd>
+                                        <dd>2. 전체 이벤트를 조회할 수 있고, 검색에 따라 업체별, 이벤트별, 카테고리별, 진행별, 추첨일, 당첨일과 같은 특정 조건에 따라 필터를 적용하여 검색할 수 있습니다.</dd>
+                                        <dd>3. 이벤트명을 클릭하면 이벤트에 대한 상세페이지로 이동합니다.</dd>
+                                    </dl>
+                                    <div class="iframe_wrap">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bwyBrqaJfY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_head">
+                                    <a href="" class="subject">
+                                        <span class="num">Q</span>
+                                        <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                    </a>
+                                    <a href="" class="naver_talk"><i class="icon-navertalk_01"></i></a>
+                                </div>
+                                <div class="list_con">
+                                    <dl>
+                                        <dt>이벤트 조회</dt>
+                                        <dd>1. <em>이벤트 관리 > 이벤트 조회/수정</em>을 클릭하면 이벤트를 조회할 수 있는 페이지가 나옵니다.</dd>
+                                        <dd>2. 전체 이벤트를 조회할 수 있고, 검색에 따라 업체별, 이벤트별, 카테고리별, 진행별, 추첨일, 당첨일과 같은 특정 조건에 따라 필터를 적용하여 검색할 수 있습니다.</dd>
+                                        <dd>3. 이벤트명을 클릭하면 이벤트에 대한 상세페이지로 이동합니다.</dd>
+                                    </dl>
+                                    <div class="iframe_wrap">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bwyBrqaJfY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_head">
+                                    <a href="" class="subject">
+                                        <span class="num">Q</span>
+                                        <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                    </a>
+                                    <a href="" class="naver_talk"><i class="icon-navertalk_01"></i></a>
+                                </div>
+                                <div class="list_con">
+                                    <dl>
+                                        <dt>이벤트 조회</dt>
+                                        <dd>1. <em>이벤트 관리 > 이벤트 조회/수정</em>을 클릭하면 이벤트를 조회할 수 있는 페이지가 나옵니다.</dd>
+                                        <dd>2. 전체 이벤트를 조회할 수 있고, 검색에 따라 업체별, 이벤트별, 카테고리별, 진행별, 추첨일, 당첨일과 같은 특정 조건에 따라 필터를 적용하여 검색할 수 있습니다.</dd>
+                                        <dd>3. 이벤트명을 클릭하면 이벤트에 대한 상세페이지로 이동합니다.</dd>
+                                    </dl>
+                                    <div class="iframe_wrap">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bwyBrqaJfY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                 <div class="list_head">
+                                    <a href="" class="subject">
+                                        <span class="num">Q</span>
+                                        <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                    </a>
+                                    <a href="" class="naver_talk"><i class="icon-navertalk_01"></i></a>
+                                </div>
+                                <div class="list_con">
+                                    <dl>
+                                        <dt>이벤트 조회</dt>
+                                        <dd>1. <em>이벤트 관리 > 이벤트 조회/수정</em>을 클릭하면 이벤트를 조회할 수 있는 페이지가 나옵니다.</dd>
+                                        <dd>2. 전체 이벤트를 조회할 수 있고, 검색에 따라 업체별, 이벤트별, 카테고리별, 진행별, 추첨일, 당첨일과 같은 특정 조건에 따라 필터를 적용하여 검색할 수 있습니다.</dd>
+                                        <dd>3. 이벤트명을 클릭하면 이벤트에 대한 상세페이지로 이동합니다.</dd>
+                                    </dl>
+                                    <div class="iframe_wrap">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bwyBrqaJfY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn_list_more">더보기 <span class="icon_more_view">+</span></button>
+                    </div>
+                    <!-- tab-conten_end -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" w3-include-html="../include/footer_manual.html"></footer>
+    <div class="side_manual" w3-include-html="../include/side_manual.html"></div>
+    <div id="side_bg"></div>
+</body>
+</html>

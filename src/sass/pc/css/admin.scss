@@ -1,0 +1,658 @@
+@charset 'utf-8';
+
+@import './mixin.scss';
+
+.container.menu-active {
+    .nav-gnb-wrap {
+        width: 210px;
+    }
+
+    .container-inner {
+        width: calc(100% - 210px);
+
+        .btn-nav-control {
+            i {
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+        }
+    }
+}
+
+.container {
+
+    .ct-head {
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        height: 50px;
+        margin: -20px -30px 0 -20px;
+        position: relative;
+        .btn-nav-control {
+            background-color: #e9eaec;
+            float: left;
+            height: 50px;
+            position: relative;
+            text-align: center;
+            width: 20px;
+            i {
+                font-size: 10px;
+                font-weight: 900;
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+        }
+        h2 {
+            color: #333;
+            float: left;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 23px;
+            margin: 14px 0 0 20px;
+            .btn-move {
+                margin-left: 5px;
+            }
+            .btn-tit-help {
+                i {
+                    margin-left: 5px;
+                    vertical-align: middle;
+                }
+                i:before {
+                    color: #ccc;
+                    font-size: 20px;
+                }
+            }
+        }
+        .btn-help {
+            margin: 10px 30px 0 0;
+            float: right;
+        }
+    }
+    .cb-head {
+        border-bottom: 1px solid #ccc;
+        height: 50px;
+        h1 {
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 16px;
+            margin: 17px 0 0 30px;
+            .num {
+                color: #ff6600;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+        .btn-move {
+            float: left;
+            margin: 19px 0 0 5px;
+        }
+        .list-pd {
+            float: right;
+            margin: 10px 30px 0 0;
+            li {
+                border: 1px solid #ccc;
+                float: left;
+                margin-left: 5px;
+                button {
+                    color: #333;
+                    display: block;
+                    height: 30px;
+                    line-height: 28px;
+                    padding: 0 10px;
+                    i {
+                        position: relative;
+                        top: 1px;
+                    }
+                }
+                select {
+                    height: 30px;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+    .btn-pd-list {
+        overflow: hidden;
+        .group-all {
+            float: left;
+            li {
+                float: left;
+                margin-right: 5px;
+            }
+        }
+        .btn-confirm {
+            float: right;
+        }
+    }
+
+}
+
+.pd-sch-step {
+    overflow: hidden;
+
+    .pd-list {
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        float: left;
+        margin-right: 30px;
+        position: relative;
+        width: 250px;
+
+        .division {
+            border-bottom: 1px solid #ccc;
+            height: 39px;
+            padding-left: 10px;
+
+            strong {
+                color: #333;
+                display: block;
+                font-size: 13px;
+                font-weight: bold;
+                line-height: 39px;
+            }
+            input[type='text'] {
+                background: none;
+                border: 0;
+                color: #333;
+                font-size: 13px;
+                font-weight: bold;
+                height: 39px;
+            }
+            .btn-sch {
+                border-left: 1px solid #ccc;
+                float: right;
+                height: 39px;
+                width: 39px;
+                i {
+                    color: #ccc;
+                    font-size: 16px;
+                    vertical-align: middle;
+                }
+            }
+            .btn-cancel {
+                background-color: #e9eaec;
+                border-left: 1px solid #ccc !important;
+                float: right;
+                height: 39px;
+                width: 39px;
+            }
+        }
+        .division.disabled {
+            background-color: #e9eaec;
+            input[type='text'] {
+                color: #ccc;
+            }
+        }
+        .list-item {
+            box-sizing: border-box;
+            height: 255px;
+            overflow-y: scroll;
+            padding: 7px 0;
+            position: relative;
+            a {
+                color: #333;
+                display: block;
+                line-height: 22px;
+                padding-left: 10px;
+            }
+            li.active a {
+                background-color: #418ded;
+                color: #fff;
+            }
+        }
+        i.icon-chevron01 {
+            color: #e5e5e5;
+            font-size: 14px;
+            position: absolute;
+            right: -23px;
+            top: 50%;
+            transform: translate(-0, -50%) rotate(-90deg)
+        }
+    }
+    .pd-list:last-child {
+        margin-right: 0;
+    }
+}
+
+.pd-sch-tbl {
+    .tbl-sch {
+        width: 100%;
+        tr {
+            border-bottom: 1px solid #f2f2f2;
+            height: 50px;
+        }
+        th {
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+        }
+        td {
+            padding: 10px 0;
+        }
+        .radio-wrap {
+            color: #333;
+            display: inline-block;
+            line-height: 20px;
+            margin-right: 20px;
+            padding-left: 25px;
+            position: relative;
+            vertical-align: middle;
+            input {
+                height: 0;
+                width: 0;
+            }
+            input:before {
+                background: url(//cdnimg.happyshopping.kr/img_static/img_admin2019/images/ico_radio.png) no-repeat;
+                content: "";
+                height: 20px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 20px;
+            }
+            input:checked:before {
+                background: url(//cdnimg.happyshopping.kr/img_static/img_admin2019/images/ico_radio_on.png) no-repeat;
+            }
+        }
+        .chkbox-wrap {
+            color: #333;
+            display: inline-block;
+            line-height: 20px;
+            margin-right: 17px;
+            padding-left: 25px;
+            position: relative;
+            vertical-align: middle;
+            input {
+                height: 0;
+                width: 0;
+            }
+            input:before {
+                background: url(//cdnimg.happyshopping.kr/img_static/img_admin2019/images/ico_chkbox.png) no-repeat;
+                content: "";
+                height: 20px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 20px;
+            }
+            input:checked:before {
+                background: url(//cdnimg.happyshopping.kr/img_static/img_admin2019/images/ico_chkbox_on.png) no-repeat;
+            }
+        }
+        .label-select {
+            margin-right: 20px;
+            .chkbox-wrap {
+                margin-right: 5px;
+            }
+        }
+        input[type='search'] {
+            height: 30px;
+            width: 250px;
+        }
+    }
+}
+
+.calendar-box {
+    float: left;
+    overflow: hidden;
+    .calendar {
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        float: left;
+        height: 30px;
+        position: relative;
+        input {
+            border: 0;
+            height: 28px;
+            width: 102px;
+		}
+        .ui-datepicker-trigger {
+            background-color: #f2f2f2;
+            border-left: 1px solid #ccc;
+            padding: 4px 6px;
+            width: 18px;
+		}
+	}
+    span {
+        float: left;
+        line-height: 30px;
+        text-align: center;
+        width: 20px;
+	}
+}
+
+.util-pickup {
+    ul {
+        overflow: hidden;
+    }
+    li {
+        box-sizing: border-box;
+        float: left;
+        text-align: center;
+        width: 50px;
+        a {
+            border: 1px solid #ccc;
+            border-left: none;
+            color: #333;
+            display: block;
+            font-size: 12px;
+            line-height: 28px;
+ 		}
+        a.active {
+            background-color: #418ded;
+            border-color: #418ded;
+            color: #fff;
+		}
+	}
+    li:first-child {
+        border-left: 1px solid #ccc;
+	}
+}
+
+.select-default {
+    height: 30px;
+    padding: 0 7px;
+}
+
+.tbl-pd-list {
+    width: 100%;
+    margin-top: 10px;
+    thead th {
+        height: 46px;
+        color: #333;
+        font-size: 11px;
+        font-weight: bold;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+    }
+    tbody tr:nth-of-type(2n+2) {
+        background-color: #f8fbfe;
+    }
+    tbody td {
+        padding: 20px;
+        vertical-align: top;
+        border: 1px solid #ccc;
+    }
+    .chk-all,
+    .chk-sub {
+        position: relative;
+        width: 0;
+        height: 0;
+    }
+    .chk-all:before,
+    .chk-sub:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-10px, -12px);
+        width: 20px;
+        height: 20px;
+        background: url(//cdnimg.happyshopping.kr/img_static/img_admin2019/images/ico_chkbox.png) no-repeat;
+    }
+    .chk-all:checked:before,
+    .chk-sub:checked:before {
+        background: url(//cdnimg.happyshopping.kr/img_static/img_admin2019/images/ico_chkbox_on.png) no-repeat;
+    }
+    .pd-number {
+        color: #333;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .date {
+        margin-top: 4px;
+        color: #999;
+        font-size: 12px;
+    }
+    .pd-name {
+        color: #333;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .list-company {
+        margin-top: 20px;
+        overflow: hidden;
+        li {
+            float: left;
+            margin-right: 4px;
+            border: 1px solid #ccc;
+            @include def-bd-radius();
+            a {
+                display: block;
+                width: 60px;
+                color: #333;
+                line-height: 24px;
+                text-align: center;
+                background-color: #fff;
+            }
+        }
+    }
+    .pd-t-area {
+        margin-top: 10px;
+        width: 100%;
+        height: 80px;
+        background-color: #fbfbfb;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        resize: none;
+    }
+    .pd-t-area::placeholder {
+        color: #ccc;
+    }
+    .supply-price {
+        li{
+            margin-bottom: 5px;
+            overflow: hidden;
+        }
+        .txt {
+            float: left;
+            width: 30px;
+            color: #333;
+            font-size: 12px;
+            line-height: 30px;
+        }
+        div {
+            float: left;
+            overflow: hidden;
+        }
+        .price {
+            float: left;
+            width: 99px;
+            height: 30px;
+            padding-right: 10px;
+            color: #333;
+            font-size: 12px;
+            line-height: 30px;
+            text-align: right;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-right: 0;
+            box-sizing: border-box;
+        }
+        .supplier {
+            float: left;
+            width: 88px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #418ded;
+            a {
+                color: #fff;
+                font-size: 12px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .stock {
+        select {
+            width: 100%;
+            height: 30px;
+        }
+        .inp-num {
+            width: 100%;
+            height: 30px;
+            margin-top: 5px;
+            text-align: center;
+        }
+    }
+    .leading-price {
+        li{
+            margin-bottom: 5px;
+            overflow: hidden;
+        }
+        li:last-child {
+            margin-bottom: 0;
+        }
+        p {
+            float: left;
+            width: 46px;
+            margin-right: 10px;
+            color: #333;
+            line-height: 30px;
+            text-align: right;
+        }
+        .inp-price {
+            float: left;
+            width: 98px;
+            height: 30px;
+        }
+    }
+}
+
+.tbl-shop-list {
+    margin-top: 10px;
+    width: 100%;
+    thead th {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        color: #333;
+        font-size: 12px;
+        font-weight: bold;
+        height: 46px;
+    }
+    tbody td {
+        border: 1px solid #ccc;
+        color: #333;
+        letter-spacing: -0.2px;
+        padding: 7px 20px;
+        vertical-align: middle;
+        .badge {
+            border: 1px solid #ededed;
+            border-radius: 50%;
+            color: #666;
+            margin-right: 2px;
+            padding: 5px;
+        }
+    }
+    .chk-all,
+    .chk-sub {
+        height: 0;
+        position: relative;
+        width: 0;
+    }
+    .chk-all:before,
+    .chk-sub:before {
+        background: url(//cdnimg.happyshopping.kr/img_static/img_admin2019/images/ico_chkbox.png) no-repeat;
+        content: "";
+        height: 20px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translate(-10px, -12px);
+        width: 20px;
+    }
+    .chk-all:checked:before,
+    .chk-sub:checked:before {
+        background: url(//cdnimg.happyshopping.kr/img_static/img_admin2019/images/ico_chkbox_on.png) no-repeat;
+    }
+}
+
+.tbl-event-list {
+    width: 100%;
+    margin-top: 10px;
+    thead th{
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        color: #333;
+        font-size: 12px;
+        font-weight: bold;
+        height: 46px;
+    }
+    tbody td {
+        border: 1px solid #ccc;
+        color: #333;
+        letter-spacing: -0.3px;
+        padding: 16px 20px;
+        vertical-align: middle;
+        .badge {
+            border: 1px solid #ededed;
+            border-radius: 50%;
+            color: #666;
+            margin-right: 2px;
+            padding: 5px;
+        }
+        .modify-subject {
+            color: #333;
+            position: relative;
+            p {
+                width: calc(100% - 55px);
+                line-height: 24px;
+            }
+            button {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            button:hover {
+                text-decoration: underline;
+            }
+        }
+        .condition-box {
+            height: 14px;
+            overflow: hidden;
+            text-align: justify;
+            span {
+                display: inline-block;
+            }
+            .condition {
+                color: #ff6600;
+                font-size: 1em;
+                font-weight: bold;
+            }
+        }
+        .condition-box:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+    }
+    .chk-all,
+    .chk-sub {
+        position: relative;
+        width: 0;
+        height: 0;
+    }
+    .chk-all:before,
+    .chk-sub:before {
+        background: url(//cdnimg.happyshopping.kr/img_static/img_admin2019/images/ico_chkbox.png) no-repeat;
+        content: "";
+        height: 20px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translate(-10px, -12px);
+        width: 20px;
+    }
+    .chk-all:checked:before,
+    .chk-sub:checked:before {
+        background: url(//cdnimg.happyshopping.kr/img_static/img_admin2019/images/ico_chkbox_on.png) no-repeat;
+    }
+}
+
+.tbl-wrap.scroll-h {
+    overflow-x: scroll;
+    width: 100%;
+}

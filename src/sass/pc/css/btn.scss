@@ -1,0 +1,156 @@
+@import './mixin.scss';
+
+@mixin btn-default($color, $border-color) {
+    height: 30px;
+    padding: 7px 18px;
+    color: $color;
+    font-size: 12px;
+    line-height: 14px;
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid #000;
+    border-color: $border-color;
+    box-sizing: border-box;
+}
+.btn-default {
+    @include btn-default(none, none);
+}
+.btn-default.type1 {
+    @include btn-default(#418ded, #418ded);
+}
+.btn-move {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    vertical-align: middle;
+    i{
+        color: #ccc;
+        font-size: 14px;
+    }
+}
+.btn-box {
+    font-size: 0;
+    margin: 20px 0 10px;
+    text-align: center;
+    button {
+        margin: 0 3px;
+        vertical-align: top;
+    }
+    button:first-child {
+        margin-left: 0 !important;
+    }
+    button:last-child {
+        margin-right: 0 !important;
+    }
+    button:hover {
+        opacity: .7;
+    }
+}
+.btn-round2 {
+    border-radius: 2px;
+}
+.btn-round3 {
+    border-radius: 3px;
+}
+.btn-confirm {
+    background-color: #418ded;
+    border-color: #418ded !important;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+.btn-cancel {
+    background-color: #fff;
+    border-color: #418ded !important;
+    color: #418ded;
+    display: inline-block;
+    text-align: center;
+}
+.btn-normal {
+    background-color: #fff;
+    border-color: #ccc !important;
+    color: #333;
+    display: inline-block;
+    text-align: center;
+}
+.btn-small {
+    border: 1px solid transparent;
+    height: 24px;
+    padding: 0 11px;
+    font-size: 12px;
+    line-height: 22px;
+}
+.btn-regular {
+    height: 30px;
+    padding: 0 11px;
+    font-size: 12px;
+    line-height: 28px;
+    border: 1px solid transparent;
+}
+.btn-big {
+    height: 50px;
+    font-size: 14px;
+    line-height: 46px;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+.pop-btn.normal {
+    height: 30px;
+    padding: 0 12px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+.pop-btn.big {
+    height: 40px;
+    font-size: 14px;
+    line-height: 38px;
+    box-sizing: border-box;
+}
+.pop-btn.send {
+    color: #000;
+    text-align: center;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+}
+.pop-btn.type2 {
+    color: #fff;
+    border: 2px solid #418ded;
+    @include def-bgc;
+}
+.pop-btn.type1 {
+    @include def-color;
+    background-color: #fff;
+    border: 2px solid #418ded;
+}
+.btn_m_default {
+    border: 1px solid $base_color4;
+    border-radius: 3px;
+    color: $base_color4;
+    font-size: 12px;
+    height: 30px;
+    line-height: 28px;
+    margin-top: 10px;
+    padding: 0 18px;
+    text-align: center;
+}
+.pop-btn.navertalk {
+    background-color: #08c841;
+    color: #fff;
+    i{
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    i:before {
+        color: #fff;
+        font-size: 14px;
+    }
+}
+.pop-btn.file {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    line-height: 24px;
+    text-align: center;
+    width: 56px;
+}

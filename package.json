@@ -1,0 +1,16 @@
+{
+    "name": "scss-lint",
+    "version": "1.0.0",
+    "description": "sass lint",
+    "devDependencies": {
+        "prettier": "^1.18.2",
+        "sass-lint": "^1.13.1"
+    },
+    "scripts": {
+        "watch": "node-sass --watch --output-style compressed src/sass --output src"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "node-sass": "^4.12.0"
+    }
+}

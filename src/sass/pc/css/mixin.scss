@@ -1,0 +1,55 @@
+// color
+$point_color2: #f34522;;
+$point_color2_over: #e5310c;
+$point_color1: #418ded;
+$point_color1_over: #3281ed;
+$point_color3: #f60;
+$black_color: #000;
+$base_color1: #333;
+$base_color2: #666;
+$base_color3: #999;
+$base_color4: #ccc;
+$bg_color1_over: #5e7694;
+$white_color: #ffffff;
+$white_color2: #f2f2f2;
+$white_color3: #e5e5e5;
+
+@mixin def-color {
+    color: $point_color1;
+}
+@mixin cancel-color {
+    color: $point_color2;
+}
+
+@mixin def-bgc {
+    background-color: $point_color1;
+}
+
+@mixin def-bdt($width) {
+    border-top: $width solid $point_color1;
+}
+@mixin def-bdr($width) {
+    border-right: $width solid $point_color1;
+}
+@mixin def-bdb($width) {
+    border-bottom: $width solid $point_color1;
+}
+@mixin def-bdl($width) {
+    border-left: $width solid $point_color1;
+}
+@mixin def-bdc {
+    border-color: $point_color1;
+}
+
+@mixin def-vertical-mg($margin-top) {
+    margin-top: $margin-top;
+}
+
+@mixin def-bd-radius {
+    border-radius: 2px;
+}
+
+@mixin def-height($height) {
+    box-sizing: border-box;
+    height: $height;
+}

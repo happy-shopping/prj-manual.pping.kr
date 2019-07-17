@@ -1,0 +1,504 @@
+@charset 'utf-8';
+
+@import './mixin.scss';
+
+.layerpop {
+
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    .dim {
+        background-color: #000;
+        bottom: 0;
+        left: 0;
+        opacity: .8;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.layerpop__wrap {
+    background-color: #fff;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .layerpop__inner {
+        position: relative;
+
+        .pop-btn-close {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+
+            i {
+                color: #fff;
+                font-size: 16px;
+                font-weight: light;
+
+                &.close2{
+                    color: #333;
+                }
+            }
+        }
+    }
+
+    .btn-box {
+        font-size: 0;
+        margin: 20px 0 0;
+        text-align: center;
+
+        button {
+            margin: 0 3px;
+        }
+    }
+
+    .row-box {
+        border: 1px solid #ccc;
+        padding: 0 20px;
+
+        .rb-head {
+            border-bottom: 1px solid #ccc;
+            height: 50px;
+            margin: 0 -20px;
+
+            h1 {
+                float: left;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 16px;
+                margin: 17px 0 0 20px;
+
+                .num {
+                    color: #ff6600;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+
+            .btn-move {
+                float: left;
+                margin: 19px 0 0 5px;
+            }
+
+            .list-pd {
+                float: right;
+                margin: 10px 20px 0 0;
+
+                li {
+                    border: 1px solid #ccc;
+                    float: left;
+                    margin-left: 5px;
+
+                    button {
+                        color: #333;
+                        display: block;
+                        height: 30px;
+                        line-height: 28px;
+                        padding: 0 10px;
+
+                        i {
+                            position: relative;
+                            top: 1px;
+                        }
+                    }
+
+                    select {
+                        height: 30px;
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+
+        .calendar {
+            .date-picker {
+                width: 86px;
+            }
+        }
+
+        .quick-date {
+            float: right;
+            margin: 0;
+        }
+
+        .btn-box {
+            font-size: 0;
+            margin: 20px 0 30px;
+            text-align: center;
+
+            button {
+                margin: 0 3px;
+            }
+        }
+    }
+}
+
+.layerpop__head {
+    @include def-bgc;
+    padding-left: 20px;
+
+    h1 {
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 50px;
+
+        i {
+            margin-right: 3px;
+        }
+
+        .icon-microsoftexcel {
+            &:before {
+                color: #fff;
+                font-size: 20px;
+                position: relative;
+                top: 4px;
+            }
+        }
+    }
+}
+
+.lp-con {
+    box-sizing: border-box;
+    max-height: 700px;
+    overflow-y: auto;
+    padding: 20px 20px 30px;
+
+    .pd-summary {
+        background-color: #f8f8f8;
+        border: 1px solid #418ded;
+        padding: 20px;
+
+        .pd-name {
+            color: #333;
+            font-size: 14px;
+        }
+
+        dd {
+            color: #333;
+            font-size: 14px;
+            margin-top: 6px;
+
+            em {
+                color: #f34522;
+                font-size: 1em;
+            }
+        }
+    }
+
+    .alert {
+        color: #333;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 22px;
+        padding-top: 30px;
+        text-align: center;
+
+        em {
+            color: #ff6600;
+            font-size: 1em;
+            font-weight: bold;
+        }
+    }
+}
+
+.lp-con__tbl-wrap {
+    margin-top: 20px;
+
+    .chkbox-wrap {
+        padding-left: 20px;
+    }
+}
+
+.lp-con__tbl-type1 {
+
+    thead {
+        th {
+            background-color: #f8f8f8;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            height: 44px;
+        }
+
+        tr {
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f8f8f8;
+            border-top: 1px solid #ccc;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            height: 44px;
+        }
+
+        td {
+            color: #333;
+            font-size: 12px;
+            height: 44px;
+            padding: 7px 10px;
+
+            strong {
+                font-weight: bold;
+            }
+
+            .negative {
+                @include cancel-color;
+            }
+
+            .positive {
+                @include def-color;
+            }
+        }
+
+        .inp-sale-price {
+            border: 1px solid #ccc;
+            color: #f34522;
+            font-size: 12px;
+            height: 30px;
+            padding: 0 10px;
+            text-align: right;
+            width: 100%;
+        }
+
+        .inp-supply-price {
+            @include def-color;
+            border: 1px solid #ccc;
+            font-size: 12px;
+            height: 30px;
+            padding: 0 10px;
+            text-align: right;
+            width: 100%;
+        }
+    }
+}
+
+.lp-con__tbl-type2 {
+    border: 1px solid #ccc;
+    thead th{
+        background-color: #f8f8f8;
+        border-right: 1px solid #ededed;
+        color: #333;
+        font-size: 11px;
+        font-weight: bold;
+        height: 44px;
+    }
+    thead th:last-child {
+        border: 0;
+    }
+    thead tr {
+        border-bottom: 1px solid #ededed;
+        border-top: 1px solid #ccc;
+    }
+    tbody {
+        tr{
+            border-bottom: 1px solid #ededed;
+        }
+        tr:last-child {
+            border-bottom: 0;
+        }
+        td {
+            border-right: 1px solid #ededed;
+            color: #333;
+            font-size: 11px;
+            height: 44px;
+            padding: 7px 20px;
+        }
+        td:last-child {
+            border: 0;
+        }
+        td.attach-file {
+            padding: 16px 20px;
+            .filename {
+                color: #333;
+                font-size: 12px;
+                line-height: 16px;
+            }
+            .icon-link {
+                margin-right: 9px;
+                vertical-align: middle;
+            }
+            .icon-link:before{
+                color: #999;
+                font-size: 16px;
+            }
+            .btn-wrap {
+                margin: 3px 0 0 20px;
+                overflow: hidden;
+                button {
+                    float: left;
+                    margin-right: 5px;
+                }
+                button:hover {
+                    text-decoration: underline;
+                }
+            }
+            .summary {
+                color: #f34522;
+                font-size: 12px;
+                line-height: 14px;
+                margin: 5px 0 0 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+
+.pop-default {
+    width: 637px;
+}
+
+.pop-small {
+    width: 286px;
+}
+
+.pop-wide {
+    width: 868px;
+}
+
+.layerpop__wrap--pop-judge {
+    min-width: 712px;
+
+    .shop-info {
+        border: 1px solid #ccc;
+        margin-top: 20px;
+
+        h3 {
+            border-bottom: 1px solid #ccc;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 16px;
+            padding: 17px 20px;
+        }
+
+        ul {
+            padding: 20px 20px 0;
+
+            li {
+                margin-bottom: 10px;
+                overflow: hidden;
+            }
+        }
+
+        .btn-wrap {
+            padding: 0 20px 20px;
+
+            button {
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+
+    .shop-info__head {
+        color: #333;
+        float: left;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 30px;
+        width: 66px;
+    }
+
+    .shop-info__data {
+        color: #333;
+        float: left;
+        font-size: 12px;
+        line-height: 30px;
+        width: calc(100% - 66px);
+
+        .url-txt {
+            float: left;
+            line-height: 30px;
+        }
+
+        .inp-box {
+            float: right;
+            width: 397px;
+        }
+
+        .shop-info__inp {
+            border: 1px solid #ccc;
+            font-size: 12px;
+            height: 28px;
+            width: 100%;
+
+            &::placeholder {
+                color: #999;
+                display: block;
+                font-size: 12px;
+                line-height: 1em;
+            }
+
+            &.wrong {
+                background-color: #fffbfb;
+                border: 1px solid #f34522;
+            }
+        }
+
+        .shop-info__warning {
+            font-size: 0;
+
+            &.wrong {
+                color: #f34522;
+                font-size: 12px;
+                line-height: 14px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+}
+
+.lp-con__tit {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+}
+
+.lp-con__guide {
+    margin: 10px 0 20px;
+
+    li {
+        color: #999;
+        font-size: 12px;
+        line-height: 14px;
+        padding-left: 12px;
+        position: relative;
+
+        em {
+            color: #f34522;
+            font-size: 1em;
+        }
+
+        &:before {
+            background-color: #999;
+            content: "";
+            height: 1px;
+            left: 4px;
+            position: absolute;
+            top: 7px;
+            width: 1px;
+        }
+    }
+}
