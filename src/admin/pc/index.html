@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="./css/common.css">
-        <link rel="stylesheet" href="./css/manual.css">
-        <link rel="stylesheet" href="./css/layout.css">
-        <link rel="stylesheet" href="//cdnjs.happyshopping.kr/icomoon/admin/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <!-- 웹 폰트 -->
-        <script src="//cdnjs.happyshopping.kr/_v5/font/webfont.js"></script>
-        <!-- 퍼블용 소스  -->
-        <script src="./js/include_m.js"></script>
-        <!-- 퍼블용 소스  -->
-        <script src="./js/manual_ui.js"></script>
-        <title>행복쇼핑 관리자 메뉴얼</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" type="image/x-icon" href="//cdnimg.happyshopping.kr/img_static/img/_v3/pping.ico">
+    <link rel="apple-touch-icon" sizes="128x128" href="//cdnimg.happyshopping.kr/img_static/shortcut/logo/128x128.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="//cdnimg.happyshopping.kr/img_static/shortcut/logo/144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="//cdnimg.happyshopping.kr/img_static/shortcut/logo/152x152.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="//cdnimg.happyshopping.kr/img_static/shortcut/logo/192x192.png">
+<!-- 
+    <link rel="stylesheet" href="../../pc/css/common.css">
+    <link rel="stylesheet" href="../../pc/css/manual.css">
+    <link rel="stylesheet" href="../../pc/css/layout.css"> -->
+
+    
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/manual.css">
+    <link rel="stylesheet" href="./css/layout.css">
+   
+    <link rel="stylesheet" href="//cdnjs.happyshopping.kr/icomoon/admin/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- 웹 폰트 -->
+    <script src="//cdnjs.happyshopping.kr/_v5/font/webfont.js"></script>
+    <!-- 퍼블용 소스  -->
+    <script src="./js/include_m.js"></script>
+    <!-- 퍼블용 소스  -->
+    <script src="./js/manual_ui.js"></script>
+    <title>행복쇼핑 관리자 매뉴얼</title>
+</head>
+
 <body>
     <header id="header" w3-include-html="./include/header_manual.html"></header>
     <section id="container" class="container menu_active">
@@ -28,10 +43,10 @@
             <div class="content">
                 <div class="manual_main">
                     <div class="head">
-                        <h2>행복쇼핑 관리자 메뉴얼</h2>
-                        <p>행복쇼핑 관리자 기능에 대한 메뉴얼을 보실 수 있습니다.</p>
+                        <h2>행복쇼핑 관리자 매뉴얼</h2>
+                        <p>행복쇼핑 관리자 기능에 대한 매뉴얼을 보실 수 있습니다.</p>
                     </div>
-                    <div class="m_sch">
+                    <!-- 검색 삭제 <div class="m_sch">
                         <div class="m_sch_wrap">
                             <form action="">
                                 <div class="m_sch_container">
@@ -47,7 +62,7 @@
                                     <button class="icon-bottom_zoomlens"></button>
                                 </div>
                             </form>
-                            <div class="m_sch_result off"><!-- on/off -->
+                            <div class="m_sch_result off">
                                 <div class="result_list">
                                     <ul>
                                         <li>
@@ -83,6 +98,7 @@
                                 <li><a href="">수수료</a></li>
                             </ul>
                         </div>
+                         -->
                     </div>
                     <div class="list_manual">
                         <ul class="depth1">
@@ -93,8 +109,6 @@
                                     <li><a href="./scm/manual_content.html">상품관리</a></li>
                                     <li><a href="#">상품일괄관리</a></li>
                                     <li><a href="#">지도가 관리</a></li>
-                                    <li><a href="#">거래처 관리</a></li>
-                                    <li><a href="#">SCM 기본설정</a></li>
                                 </ul>
                             </li>
                             <li class="item_di">
@@ -104,9 +118,7 @@
                                     <li><a href="#">개인회원 관리</a></li>
                                     <li><a href="#">단체회원 관리</a></li>
                                     <li><a href="#">판매회원 관리</a></li>
-                                    <li><a href="#">광고회원 관리</a></li>
                                 </ul>
-                                <a href="#" class="btn_more">더보기<i class="icon-chevron-right"></i></a>
                             </li>
                             <li class="item_di">
                                 <i class="icon-shopping-bag"></i>
@@ -115,9 +127,7 @@
                                     <li><a href="#">상품관리</a></li>
                                     <li><a href="#">상품일괄관리</a></li>
                                     <li><a href="#">표준 pc관리</a></li>
-                                    <li><a href="#">소셜쇼핑관리</a></li>
                                 </ul>
-                                <a href="#" class="btn_more">더보기</a>
                             </li>
                             <li class="item_di">
                                 <i class="icon-box"></i>
@@ -126,7 +136,6 @@
                                     <li><a href="#">주문관리</a></li>
                                     <li><a href="#">취소/교환/반품/환불 리스트</a></li>
                                     <li><a href="#">자동입금 관리</a></li>
-                                    <li><a href="#">증빙서류 관리</a></li>
                                 </ul>
                             </li>
                             <li class="item_di">
@@ -136,8 +145,6 @@
                                     <li><a href="#">상품관리</a></li>
                                     <li><a href="#">상품일괄관리</a></li>
                                     <li><a href="#">지도가 관리</a></li>
-                                    <li><a href="#">거래처 관리</a></li>
-                                    <li><a href="#">SCM 기본설정</a></li>
                                 </ul>
                             </li>
                             <li class="item_di">
@@ -147,9 +154,7 @@
                                     <li><a href="#">상품관리</a></li>
                                     <li><a href="#">상품일괄관리</a></li>
                                     <li><a href="#">표준 pc관리</a></li>
-                                    <li><a href="#">소셜쇼핑관리</a></li>
                                 </ul>
-                                <a href="#" class="btn_more">더보기</a>
                             </li>
                             <li class="item_di">
                                 <i class="icon-stars"></i>
@@ -158,8 +163,6 @@
                                     <li><a href="#">상품관리</a></li>
                                     <li><a href="#">상품일괄관리</a></li>
                                     <li><a href="#">지도가 관리</a></li>
-                                    <li><a href="#">거래처 관리</a></li>
-                                    <li><a href="#">SCM 기본설정</a></li>
                                 </ul>
                             </li>
                             <li class="item_di">
@@ -169,8 +172,6 @@
                                     <li><a href="#">상품관리</a></li>
                                     <li><a href="#">상품일괄관리</a></li>
                                     <li><a href="#">지도가 관리</a></li>
-                                    <li><a href="#">거래처 관리</a></li>
-                                    <li><a href="#">SCM 기본설정</a></li>
                                 </ul>
                             </li>
                             <li class="item_di">
@@ -180,7 +181,6 @@
                                     <li><a href="#">주문관리</a></li>
                                     <li><a href="#">취소/교환/반품/환불 리스트</a></li>
                                     <li><a href="#">자동입금 관리</a></li>
-                                    <li><a href="#">증빙서류 관리</a></li>
                                 </ul>
                             </li>
                             <li class="item_di">
@@ -190,9 +190,7 @@
                                     <li><a href="#">상품관리</a></li>
                                     <li><a href="#">상품일괄관리</a></li>
                                     <li><a href="#">표준 pc관리</a></li>
-                                    <li><a href="#">소셜쇼핑관리</a></li>
                                 </ul>
-                                <a href="#" class="btn_more">더보기</a>
                             </li>
                             <li class="item_di">
                                 <i class="icon-pie-chart"></i>
@@ -200,10 +198,8 @@
                                 <ul class="depth2">
                                     <li><a href="#">상품관리</a></li>
                                     <li><a href="#">상품일괄관리</a></li>
-                                    <li><a href="#">표준 pc관리</a></li>
                                     <li><a href="#">소셜쇼핑관리</a></li>
                                 </ul>
-                                <a href="#" class="btn_more">더보기</a>
                             </li>
                         </ul>
                     </div>
@@ -213,4 +209,5 @@
         </div>
     </section>
 </body>
+
 </html>

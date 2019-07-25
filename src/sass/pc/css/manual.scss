@@ -2,11 +2,6 @@
 
 @import './mixin.scss';
 
-html,
-body {
-    height: 100%;
-}
-
 html {
     min-width: 1280px !important;
 }
@@ -49,34 +44,27 @@ html {
     }
 }
 
-.container {
-    height: calc(100% - 50px);
-}
-
 .side_manual {
+    position: fixed;
+    top: 50px;
     bottom: 0;
     left: 0;
-    position: absolute;
-    top: 0;
-    width: 0;
+    width: 210px;
     background-color: $white_color;
+    transform: translateX(-100%);
     transition: .3s;
 
     .gnb_am {
+        padding: 0 0 15px;
         min-width: 210px;
     }
 
     .opt_box {
-
         padding: 20px 10px;
-
         li {
             margin-bottom: 5px;
-
             &:last-child {
-
                 margin-bottom: 0;
-
             }
 
             a {
@@ -99,12 +87,13 @@ html {
                     width: 24px;
 
                     &.icon-navertalk_01 {
-
                         color: #08c841;
-
                     }
                 }
 
+                &:hover {
+                    border: 1px solid $point_color1;
+                }
             }
         }
 
@@ -115,7 +104,7 @@ html {
         position: relative;
 
         .item_d1 {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             position: relative;
 
             .icon-angle-down {
@@ -126,8 +115,18 @@ html {
                 top: 10px;
             }
 
+            &:hover {
+                .btn_d1 {
+                    color: $point_color1;
+
+                    i {
+                        background-color: $point_color1;
+                        color: $white_color;
+                    }
+                }
+            }
+
             &.active {
-                margin-bottom: 10px;
                 padding-bottom: 10px;
 
                 .icon-angle-down {
@@ -192,6 +191,9 @@ html {
             .d2_item {
 
                 position: relative;
+                &:hover .depth3 {
+                    display: block
+                }
 
                 .btn_d2 {
                     color: $base_color1;
@@ -329,7 +331,7 @@ html {
             border-left: 4px solid transparent;
         }
 
-        &.active {
+        &:hover, &.active {
 
             border-color: $point_color1;
             color: $point_color1;
@@ -366,36 +368,25 @@ html {
 
 .content_wrap {
     background-color: #e9eaec;
-    bottom: 0;
-    left: 0;
-    overflow: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
+    margin: 0;
+    min-height: calc(100vh - 50px);
     box-sizing: border-box;
     transition: .3s;
 }
 
 .container.menu_active {
-
     .content_wrap {
-
-        left: 210px;
-
+        margin: 0 0 0 210px;
     }
 
     .side_manual {
-
-        width: 210px;
-
+        transform: translateX(0)
     }
 
     .btn_nav_control {
-
         i {
             transform: translate(-50%, -50%) rotate(180deg);
         }
-
     }
 
 }
@@ -790,7 +781,7 @@ html {
             background-color: $white_color;
             box-sizing: border-box;
             float: left;
-            height: 300px;
+            height: 255px;
             margin: 20px 0 0 20px;
             padding-top: 30px;
             text-align: center;
@@ -913,14 +904,10 @@ html {
             }
 
             &.active {
-
                 .num {
-
                     background-color: $point_color1;
                     color: $white_color;
-
                 }
-
             }
 
             &:last-child.active {
@@ -934,6 +921,12 @@ html {
             overflow: hidden;
             float: left;
 
+            &:hover {
+                .num {
+                    background-color: $point_color1;
+                    color: $white_color;
+                }
+            }
         }
 
         .naver_talk {
@@ -949,6 +942,10 @@ html {
             float: right;
             margin-top: 6px;
             font-size: 12px;
+
+            &:hover {
+                border: 1px solid $point_color1
+            }
 
             i {
 

@@ -4,9 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="shortcut icon" type="image/x-icon" href="//cdnimg.happyshopping.kr/img_static/img/_v3/pping.ico">
+        <link rel="apple-touch-icon" sizes="128x128" href="//cdnimg.happyshopping.kr/img_static/shortcut/logo/128x128.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="//cdnimg.happyshopping.kr/img_static/shortcut/logo/144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="//cdnimg.happyshopping.kr/img_static/shortcut/logo/152x152.png">
+        <link rel="apple-touch-icon" sizes="192x192" href="//cdnimg.happyshopping.kr/img_static/shortcut/logo/192x192.png">
+
+        <!-- <link rel="stylesheet" href="../../../pc/css/common.css">
+        <link rel="stylesheet" href="../../../pc/css/manual.css">
+        <link rel="stylesheet" href="../../../pc/css/layout.css"> -->
+
+        
         <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="../css/manual.css">
         <link rel="stylesheet" href="../css/layout.css">
+        
+
         <link rel="stylesheet" href="//cdnjs.happyshopping.kr/icomoon/admin/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,7 +31,7 @@
         <script src="../js/include_m.js"></script>
         <!-- 퍼블용 소스  -->
         <script src="../js/manual_ui.js"></script>
-        <title>행복쇼핑 관리자 메뉴얼</title>
+        <title>행복쇼핑 관리자 매뉴얼</title>
     </head>
 <body>
     <header id="header"  w3-include-html="../include/header_manual.html"></header>
@@ -31,7 +45,7 @@
             </div>
             <div class="content">
                 <div class="menual_sub">
-                    <div class="m_sch">
+                    <!-- 검색 삭제 <div class="m_sch">
                         <div class="m_sch_wrap">
                             <form action="">
                                 <div class="m_sch_container">
@@ -47,7 +61,7 @@
                                     <button class="icon-bottom_zoomlens"></button>
                                 </div>
                             </form>
-                            <div class="m_sch_result off"><!-- on/off -->
+                            <div class="m_sch_result off">
                                 <div class="result_list">
                                     <ul>
                                         <li>
@@ -83,7 +97,7 @@
                                 <li><a href="">수수료</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- search_end -->
                     <div class="menu_acordion">
                         <div class="acordion_subject">
@@ -95,7 +109,7 @@
                                         <div class="list_head">
                                             <a href="" class="subject">
                                                 <span class="num">Q</span>
-                                                <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                                <span class="txt">현재 카테고리에 대한 매뉴얼</span>
                                             </a>
                                             <a href="" class="naver_talk"><i class="icon-navertalk_01"></i>톡톡문의</a>
                                         </div>
@@ -107,145 +121,13 @@
                                                 <dd>3. 이벤트명을 클릭하면 이벤트에 대한 상세페이지로 이동합니다.</dd>
                                             </dl>
                                             <iframe width="700" height="394" src="https://www.youtube.com/embed/bwyBrqaJfY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                            <!-- 댓글  -->
-                                            <div class="cont_cmt">
-                                                <!-- 댓글 작성-->
-                                                <div class="cmt_writer">
-                                                    <div class="cmt_form">
-                                                        <div class="i_textarea">
-                                                            <textarea id="id_cmnt" name="comment_msg" title="댓글작성" placeholder="※ 광고/욕설/비방이나 목적에 맞지 않는 글은 관리자에 의해 삭제될 수 있습니다.(10자 이상 등록 가능합니다.)"></textarea>
-                                                        </div>
-                                                        <div class="comt_form_bot">
-                                                            <div class="i_submit">
-                                                                <span class="word_cnt"><em class="clrpont3">0</em> / 1,000</span>
-                                                                <button type="button" class="cmnt_submit" disabled="">등록</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--// 댓글 작성 끝 -->
-                                                <!-- 댓글 리스트 -->
-                                                <div class="cmt_list">
-                                                    <div class="cmt_btns">
-                                                        <button class="btn_all_cmt on">전체</button>
-                                                        <button class="btn_my_cmt">내가 쓴 댓글</button>
-                                                    </div>
-                                                    <table class="cmt_table">
-                                                        <tr>
-                                                            <th>작성자</th>
-                                                            <th>내용</th>
-                                                            <th>작성일</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><p class="cmt_pping"><img src="//cdnimg.happyshopping.kr/img_static/img_mobile/v5/comm/mlogo.png" alt="logo">행복쇼핑</p></td>
-                                                            <td class="istar">
-                                                                <div class="cmt_con">안녕하세요. STCOM 슈퍼오 마케팅 담당자 입니다.
-                                                                        "슈퍼오 C7-B250-CB-ML 메인보드 & Team Group T-Force 메모리 장점을 찾아라!" 댓글 이벤트에
-                                                                        참여해주셔서감사드립니다.
-                                                                        이번 슈퍼오 C7-B250-CB-ML 메인보드 & Team Group T-Force 메모리 장점을 찾아라!
-                                                                        댓글 이벤트에 선정된 당첨자는 "ID : rlanfn" 님이 선정되었음을 알려드리며, jh_shin@stcom.co.kr 로
-                                                                        받으실 주소와 연락처를 메일로 알려주시면 됩니다.
-                                                                        본 이벤트에 보내주신 성원과 참여에 깊은 감사를 드리며, 앞으로 더욱 풍성한 이벤트로 찾아 뵙겠습니다.</div>
-                                                                <div class="btn_cmt_item">
-                                                                    <span class="modify">
-                                                                        <button type="button" class="clrbase3">수정</button>
-                                                                        <em class="cut_line">|</em>
-                                                                        <button type="button" class="clrbase3">삭제</button>
-                                                                    </span>
-                                                                    <span class="delete">
-                                                                        <span>정말 삭제하시겠습니까?</span>
-                                                                        <button type="button" class="clrpont2">예</button>
-                                                                        <em class="cut_line">|</em>
-                                                                        <button type="button" class="clrpont2">아니요</button>
-                                                                     </span>
-                                                                 </div>
-                                                            </td>
-                                                            <td>
-                                                                <time datetime="2019-06-30T14:40:38.000Z" title="2019-06-30 14:40">5분 전</time>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>기무르</td>
-                                                            <td class="isrep">
-                                                                <div class="cmt_con">당첨관련 궁금한게 있는데 유선통화 부탁드려요...</div>
-                                                                <div class="btn_cmt_item">
-                                                                    <span class="modify">
-                                                                        <button type="button" class="clrbase3">답글</button>
-                                                                    </span>
-                                                                 </div>
-                                                            </td>
-                                                            <td>
-                                                                <time datetime="2019-06-30T14:40:38.000Z" title="2019-06-30 14:40">5분 전</time>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>young***</td>
-                                                            <td>
-                                                                <div class="cmt_cont">이벤트 참여 합니다.</div>
-                                                                <div class="btn_cmt_item">
-                                                                    <span class="modify">
-                                                                        <button type="button" class="clrbase3">수정</button>
-                                                                        <em class="cut_line">|</em>
-                                                                        <button type="button" class="clrbase3">삭제</button>
-                                                                    </span>
-                                                                 </div>
-                                                            </td>
-                                                            <td>2018.08.21</td>
-                                                        </tr>
-                                                        <tr class="cmt_me">
-                                                            <td>hong***</td>
-                                                            <td>
-                                                                <div class="cmt_con">먼저뽑아주세요</div>
-                                                                <div class="btn_cmt_item">
-                                                                    <div class="reply_writer">
-                                                                        <div class="reply_form">
-                                                                            <div class="i_textarea">
-                                                                                <textarea id="id_reply" name="comment_msg" title="댓글작성" placeholder="※ 광고/욕설/비방이나 목적에 맞지 않는 글은 관리자에 의해 삭제될 수 있습니다.(10자 이상 등록 가능합니다.)"></textarea>
-                                                                            </div>
-                                                                            <div class="reply_form_bot">
-                                                                                <div class="i_submit">
-                                                                                    <span class="word_cnt"><em class="clrpont3">0</em> / 1,000</span>
-                                                                                    <button type="button" class="reply_submit reply_cancel" disabled="">취소</button>
-                                                                                    <button type="button" class="reply_submit" disabled="">등록</button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>2018.08.21(1일전)</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>yujeong0***</td>
-                                                            <td>
-                                                                <div class="cmt_con">메인보드와 메모리는 무엇보다 안정성이 뛰어나야 한다고 봅니다.
-                                                                        그런면에서 참으로 좋은 조합이라고 생각되는데요.
-                                                                        먼저 슈퍼오는 서버메인보드에서 인정받은 메인보드이기에 의심할 필요가 없지요.
-                                                                        또한 AS 무상 보증까지 4년으로 타사대비 1년더 길기때문에 pc 업그레이드 주기보다도 길다는 생각이드네요.
-                                                                        램도 마찬가지로 안정성이 뛰어나야하는데 팀그룹의 메인보드도 상당히 호평을 받고있지요. 게다가 외형적인 디자인까지 좋기때문에 앞으로 더욱 인기가 늘어갈것같습니다.
-                                                                        두 제품의 조합 앞으로 더 많은 시너지 기대해보겠습니다.
-                                                                </div>
-                                                                <div class="btn_cmt_item">
-                                                                    <span class="modify">
-                                                                        <button type="button" class="clrbase3">답글</button>
-                                                                    </span>
-                                                                 </div>
-                                                            </td>
-                                                            <td>2018.08.21</td>
-                                                        </tr>
-                                                    </table>
-                                                    <button type="button" class="btn_cmt_more">더보기 <span class="icon_more_view">+</span></button>
-                                                </div>
-                                                <!--// 댓글 리스트 끝-->
-                                            </div>
-                                            <!--// 댓글 끝 -->
                                         </div>
                                     </li>
                                     <li>
                                         <div class="list_head">
                                             <a href="" class="subject">
                                                 <span class="num">Q</span>
-                                                <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                                <span class="txt">현재 카테고리에 대한 매뉴얼</span>
                                             </a>
                                             <a href="" class="naver_talk"><i class="icon-navertalk_01"></i>톡톡문의</a>
                                         </div>
@@ -263,7 +145,7 @@
                                         <div class="list_head">
                                             <a href="" class="subject">
                                                 <span class="num">Q</span>
-                                                <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                                <span class="txt">현재 카테고리에 대한 매뉴얼</span>
                                             </a>
                                             <a href="" class="naver_talk"><i class="icon-navertalk_01"></i>톡톡문의</a>
                                         </div>
@@ -283,7 +165,7 @@
                                         <div class="list_head">
                                             <a href="" class="subject">
                                                 <span class="num">Q</span>
-                                                <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                                <span class="txt">현재 카테고리에 대한 매뉴얼</span>
                                             </a>
                                             <a href="" class="naver_talk"><i class="icon-navertalk_01"></i>톡톡문의</a>
                                         </div>
@@ -301,7 +183,7 @@
                                          <div class="list_head">
                                             <a href="" class="subject">
                                                 <span class="num">Q</span>
-                                                <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                                <span class="txt">현재 카테고리에 대한 매뉴얼</span>
                                             </a>
                                             <a href="" class="naver_talk"><i class="icon-navertalk_01"></i>톡톡문의</a>
                                         </div>
@@ -319,7 +201,7 @@
                                         <div class="list_head">
                                             <a href="" class="subject">
                                                 <span class="num">Q</span>
-                                                <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                                <span class="txt">현재 카테고리에 대한 매뉴얼</span>
                                             </a>
                                             <a href="" class="naver_talk"><i class="icon-navertalk_01"></i>톡톡문의</a>
                                         </div>
@@ -337,7 +219,7 @@
                                         <div class="list_head">
                                             <a href="" class="subject">
                                                 <span class="num">Q</span>
-                                                <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                                <span class="txt">현재 카테고리에 대한 매뉴얼</span>
                                             </a>
                                             <a href="" class="naver_talk"><i class="icon-navertalk_01"></i>톡톡문의</a>
                                         </div>
@@ -355,7 +237,7 @@
                                         <div class="list_head">
                                             <a href="" class="subject">
                                                 <span class="num">Q</span>
-                                                <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                                <span class="txt">현재 카테고리에 대한 매뉴얼</span>
                                             </a>
                                             <a href="" class="naver_talk"><i class="icon-navertalk_01"></i>톡톡문의</a>
                                         </div>
@@ -373,7 +255,7 @@
                                         <div class="list_head">
                                             <a href="" class="subject">
                                                 <span class="num">Q</span>
-                                                <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                                <span class="txt">현재 카테고리에 대한 매뉴얼</span>
                                             </a>
                                             <a href="" class="naver_talk"><i class="icon-navertalk_01"></i>톡톡문의</a>
                                         </div>
@@ -391,7 +273,7 @@
                                          <div class="list_head">
                                             <a href="" class="subject">
                                                 <span class="num">Q</span>
-                                                <span class="txt">현재 카테고리에 대한 메뉴얼</span>
+                                                <span class="txt">현재 카테고리에 대한 매뉴얼</span>
                                             </a>
                                             <a href="" class="naver_talk"><i class="icon-navertalk_01"></i>톡톡문의</a>
                                         </div>

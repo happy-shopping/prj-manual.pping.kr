@@ -53,7 +53,7 @@ a:hover{text-decoration:none}
 
 /*기본*/
 #wrap{width:100%;max-width: 1740px;height:100%;margin: 0 auto;}
-#header{position:relative}
+#header{position: fixed;top: 0;left: 0;right: 0;z-index: 10;}
 #container{position:relative; zoom:1}
 #container:after{display:block;clear:both;content:''}
 #footer{position:relative}
@@ -81,7 +81,7 @@ select{border: 1px solid #ccc;}
 .paging a{display: inline-block;vertical-align: top; width: 28px;height: 28px;line-height: 26px;border: 1px solid #ccc;background-color: #f7f7f7;box-sizing: border-box;text-align: center;}
 .paging a i{font-size: 10px;}
 .paging a.num{background: #fff;border: 1px solid #fff;}
-.paging a.num:hover{border: 1px solid #418ded;}
+.paging a:hover{border: 1px solid #418ded;}
 .paging a.num.on{color: #fff; background: #418ded; border: 1px solid #418ded;}
 .paging a.prev{margin-right: 7px;}
 .paging a.next{margin-left: 7px;}
