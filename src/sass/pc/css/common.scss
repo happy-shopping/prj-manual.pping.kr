@@ -53,7 +53,7 @@ a:hover{text-decoration:none}
 
 /*기본*/
 #wrap{width:100%;max-width: 1740px;height:100%;margin: 0 auto;}
-#header{position: fixed;top: 0;left: 0;right: 0;z-index: 10;}
+#header{position: fixed;top: 0;left: 0;right: 0;z-index: 20;}
 #container{position:relative; zoom:1}
 #container:after{display:block;clear:both;content:''}
 #footer{position:relative}
