@@ -204,6 +204,9 @@ html {
                     line-height: 24px;
                     padding-left: 54px;
 
+                    &.active .txt {
+                        color: #418ded
+                    }
                 }
 
                 &:hover,
@@ -222,7 +225,7 @@ html {
         .depth3 {
             display: none;
             position: absolute;
-            margin: -30px 0 0 170px;
+            margin: -30px 0 0 180px;
             box-sizing: border-box;
             border: 1px solid $point_color1;
             background-color: $white_color;
@@ -1686,4 +1689,39 @@ html {
     }
 
     &+& {margin: 0 0 0 5px}
+}
+
+// 매뉴 아이콘 ID값으로 각개 등록.
+.icon-menu2:before {
+    content: "\e91f";
+}
+.icon-menu5:before {
+    content: "\e920";
+}
+.icon-menu3:before {
+    content: "\e926";
+}
+.icon-menu4:before {
+    content: "\e912";
+}
+.icon-menu6:before {
+    content: "\e905";
+}
+.icon-menu7:before {
+    content: "\e927";
+}
+.icon-menu8:before {
+    content: "\e906";
+}
+.icon-menu9:before {
+    content: "\e923";
+}
+.icon-menu10:before {
+    content: "\e914"
+}
+.icon-menu351:before {
+    content: "\e90e";
+}
+.icon-menu11:before {
+    content: "\e91c";
 }
