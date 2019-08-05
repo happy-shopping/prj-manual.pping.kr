@@ -1692,6 +1692,9 @@ html {
 }
 
 // 매뉴 아이콘 ID값으로 각개 등록.
+.icon-menu1:before {
+    content: "\e91e";
+}
 .icon-menu2:before {
     content: "\e91f";
 }
