@@ -443,14 +443,14 @@ footer {
     height: 100%;
     background-color: rgba(0,0,0,.75);
     z-index: 2;
-
 }
 
 .side_manual {
-
-    position: absolute;
+    display: none;
+    position: fixed;
     top: 0;
-    right: -240px;
+    right: 0;
+    overflow: auto;
     width: 240px;
     height: 100%;
     background-color: $white_color;
@@ -812,7 +812,17 @@ footer {
 
 }
 
+.app.menu_on {
+    height: 100%;
+    overflow: hidden;
 
+    .side_manual {
+        display: block
+    }
+    #side_bg {
+        display: block
+    }
+}
 
 // acordion style
 .menu_acordion {
@@ -1243,7 +1253,6 @@ footer {
                 letter-spacing: 0;
                 line-height: 40px;
                 padding: 0 10px;
-                vertical-align: top;
                 float: right;
 
                 .clrpont3 {

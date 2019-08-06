@@ -1691,6 +1691,71 @@ html {
     &+& {margin: 0 0 0 5px}
 }
 
+.list_switch_toggle {
+    position: relative;
+    float: right;
+    margin: 11px 6px 0 0;
+    width: 59px;
+    height: 20px;
+    background: #418ded;
+    border: 1px solid #418ded;
+    border-radius: 15px;
+
+    .switch_move {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 2px;
+        right: 2px;
+        transform: translateX(0px);
+        border-radius: 15px;
+        z-index: 5;
+        background: #fff;
+        transition: transform .3s;
+    }
+    .switch_text {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0 29px 0 13px;
+        white-space: nowrap;
+        box-sizing: border-box;
+        z-index: 10;
+
+        i {
+            float: left;
+            width: 50%;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 700;
+            transition: .2s
+        }
+        .show {
+            color:#fff;
+            opacity: 1;
+        }
+        .hide {
+            opacity: 0;
+        }
+    }
+
+    &.on {
+        background: #fff;
+
+        .switch_move {
+            transform: translateX(-38px);
+            background: #418ded;
+        }
+        .show {
+            opacity: 0;
+        }
+        .hide {
+            color: #418ded;
+            opacity: 1;
+        }
+    }
+}
+
 // 매뉴 아이콘 ID값으로 각개 등록.
 .icon-menu1:before {
     content: "\e91e";

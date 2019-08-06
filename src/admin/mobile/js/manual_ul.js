@@ -52,12 +52,12 @@ $.fn.sidebar = function(){
         }
     });
 
-    closed.on('click',function(){
-        $(".side_manual").stop().animate({
-            right:"-240px"
-        },300);
-        $("#side_bg").hide();
-    })
+    // closed.on('click',function(){
+    //     $(".side_manual").stop().animate({
+    //         right:"-240px"
+    //     },300);
+    //     $("#side_bg").hide();
+    // })
 }
 
 $(window).on('load side_menual.html', function(){
