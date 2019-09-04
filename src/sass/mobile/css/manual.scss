@@ -2,6 +2,10 @@
 
 @import './mixin.scss';
 
+#root, #wrapper {
+    height: 100%
+}
+
 body {
     overflow-x: hidden;
 }
@@ -408,7 +412,7 @@ footer {
             padding: 0 5px;
             box-sizing: border-box;
 
-            a {
+            a, button {
 
                 display: block;
                 border: 1px solid $base_color4;
@@ -608,6 +612,10 @@ footer {
                         }
                     }
                 }
+
+                .btn_d1, .btn_d2 {
+                    cursor: pointer;
+                }
             }
 
             .btn_d1 {
@@ -759,6 +767,7 @@ footer {
             font-size: 13px;
             font-weight: bold;
             padding-left: 10px;
+            cursor: pointer;
 
             &:after {
                 content: '';
@@ -831,6 +840,7 @@ footer {
         background-color: $white_color;
         color: $base_color1;
         font-size: 18px;
+        height: 41px;
         line-height: 40px;
         text-align: center;
         box-sizing: border-box;
@@ -900,7 +910,7 @@ footer {
         }
 
         .subject {
-
+            width: calc(100% - 45px);
             display: block;
             overflow: hidden;
             float: left;
@@ -949,6 +959,11 @@ footer {
         }
 
         .txt {
+            width: calc(100% - 45px);
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-align: left;
             color: $base_color1;
             float: left;
             font-size: 13px;
@@ -957,6 +972,11 @@ footer {
     }
 
     .list_head {
+        .txt {
+            b {
+                color: red
+            }
+        }
 
         &:after {
             content: '';
@@ -1007,13 +1027,9 @@ footer {
         }
 
         iframe {
-
-            position: absolute;
-            left: 0;
-            top: 0;
+            position: static;
             width: 100%;
-            height: 100%;
-
+            height: 51vw;
         }
     }
 
@@ -1484,4 +1500,53 @@ footer {
         }
     }
 
+}
+
+.react-slidedown {
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+.react-slidedown.transitioning {
+    overflow-y: hidden
+}
+.react-slidedown.my-dropdown-slidedown {
+    transition-duration: 1.2s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.icon-menu1:before {
+    content: "\e91e";
+}
+.icon-menu2:before {
+    content: "\e91f";
+}
+.icon-menu5:before {
+    content: "\e920";
+}
+.icon-menu3:before {
+    content: "\e926";
+}
+.icon-menu4:before {
+    content: "\e912";
+}
+.icon-menu6:before {
+    content: "\e905";
+}
+.icon-menu7:before {
+    content: "\e927";
+}
+.icon-menu8:before {
+    content: "\e906";
+}
+.icon-menu9:before {
+    content: "\e923";
+}
+.icon-menu10:before {
+    content: "\e914"
+}
+.icon-menu351:before {
+    content: "\e90e";
+}
+.icon-menu11:before {
+    content: "\e91c";
 }
